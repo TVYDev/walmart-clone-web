@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">walmart-clone-web</h1>
+      <h1 class="title">walmart-clone-web <i class="fas fa-user" /></h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"

@@ -17,6 +17,12 @@ export default {
         href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap',
       },
     ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/56bba51146.js',
+        crossorigin: 'anonymous',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
