@@ -11,9 +11,14 @@
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:script && yarn lint:style"
   },
+  "lint-staged": {
+    "*.{ts,js,vue}": "yarn lint:script",
+    "*.{css,vue}": "yarn lint:style"
+  },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint"
+      "commit-msg": "commitlint",
+      "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
@@ -32,6 +37,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
     "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
