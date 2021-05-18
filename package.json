@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
@@ -36,7 +36,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
-    "husky": "^6.0.0",
+    "husky": "^4.3.8",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
