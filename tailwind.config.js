@@ -5,6 +5,13 @@ module.exports = {
     fontFamily: {
       body: ['Montserrat', 'sans-serif'],
     },
+    extend: {
+      colors: {
+        primary: '#041e42',
+        secondary: '#0071dc',
+        accent: '#ffc220',
+      },
+    },
   },
   variants: {
     extend: {},
