@@ -20,7 +20,9 @@
       <CommonIconText text="My Items" class="hidden md:flex font-semibold mx-3">
         <i class="far fa-heart" />
       </CommonIconText>
-      <i class="fas fa-shopping-cart cursor-pointer" />
+      <CommonBadge text="0">
+        <i class="fas fa-shopping-cart cursor-pointer" />
+      </CommonBadge>
     </div>
   </nav>
 </template>
