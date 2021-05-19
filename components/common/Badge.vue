@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row items-center">
-    <slot></slot>
+    <slot />
     <div
       class="
         -top-2

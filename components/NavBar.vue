@@ -3,15 +3,18 @@
     <div class="flex flex-row items-center">
       <i class="fas fa-bars text-white cursor-pointer" />
       <NuxtLink to="#" class="mx-3">
-        <img class="w-7 md:hidden" src="~/assets/images/walmart-icon.svg" />
+        <img
+          class="w-7 md:hidden navbar__brand-icon"
+          src="~/assets/images/walmart-icon.svg"
+        />
         <img
           class="w-28 hidden md:inline-block"
           src="~/assets/images/walmart.svg"
         />
       </NuxtLink>
     </div>
-    <div class="flex-grow border-2 mx-3 text-white sm:flex-grow-0 sm:w-1/2">
-      Search Box
+    <div class="flex-grow mx-2 sm:flex-grow-0 sm:w-1/2">
+      <SearchBox />
     </div>
     <div class="flex flex-row text-white">
       <CommonIconText text="Account" class="hidden md:flex font-semibold mx-3">
@@ -26,3 +29,10 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+/* TODO: Refactor (Find solution to set min-width with Tailwind) */
+.navbar__brand-icon {
+  min-width: 1.75rem;
+}
+</style>
