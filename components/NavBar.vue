@@ -13,21 +13,14 @@
     <div class="flex-grow border-2 mx-3 text-white sm:flex-grow-0 sm:w-1/2">
       Search Box
     </div>
-    <div class="flex flex-row">
-      <div class="hidden md:flex flex-row text-white items-center mx-3">
+    <div class="flex flex-row text-white">
+      <CommonIconText text="Account" class="hidden md:flex font-semibold mx-3">
         <i class="far fa-user" />
-        <div class="ml-2 text-xs font-semibold">Account</div>
-      </div>
-      <div class="hidden md:flex flex-row text-white items-center mx-3">
+      </CommonIconText>
+      <CommonIconText text="My Items" class="hidden md:flex font-semibold mx-3">
         <i class="far fa-heart" />
-        <div class="ml-2 text-xs font-semibold whitespace-nowrap">My Items</div>
-      </div>
-      <i class="fas fa-shopping-cart text-white cursor-pointer" />
+      </CommonIconText>
+      <i class="fas fa-shopping-cart cursor-pointer" />
     </div>
   </nav>
 </template>
-
-<script lang="ts">
-import Vue from 'vue';
-export default Vue.extend({});
-</script>
