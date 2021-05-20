@@ -29,13 +29,3 @@
     </div>
   </nav>
 </template>
-
-<style scoped>
-/* TODO: Refactor (Find solution to set min-width with Tailwind) */
-.navbar__brand-icon {
-  min-width: 1.75rem;
-}
-.navbar__brand-icon-full {
-  min-width: 7rem;
-}
-</style>

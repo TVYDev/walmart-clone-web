@@ -37,15 +37,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style scoped>
-.slide-vertical-enter-active,
-.slide-vertical-leave-active {
-  transition: all 0.2s;
-}
-.slide-vertical-enter,
-.slide-vertical-leave-to {
-  transform: translateY(-5px);
-  opacity: 0;
-}
-</style>
