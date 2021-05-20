@@ -4,6 +4,7 @@
     <transition name="slide-vertical">
       <div
         v-if="isShown"
+        v-click-outside="dropdownToggler"
         class="
           w-full
           hidden
