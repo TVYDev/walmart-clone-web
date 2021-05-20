@@ -8,7 +8,7 @@
           src="~/assets/images/walmart-icon.svg"
         />
         <img
-          class="w-28 ml-3 hidden md:inline-block navbar__brand-con-full"
+          class="w-28 ml-3 hidden md:inline-block navbar__brand-icon-full"
           src="~/assets/images/walmart.svg"
         />
       </NuxtLink>
@@ -35,7 +35,7 @@
 .navbar__brand-icon {
   min-width: 1.75rem;
 }
-.navbar__brand-con-full {
+.navbar__brand-icon-full {
   min-width: 7rem;
 }
 </style>
