@@ -11,6 +11,9 @@ module.exports = {
         secondary: '#0071dc',
         accent: '#ffc220',
       },
+      gridTemplateRows: {
+        9: 'repeat(9, minmax(0, 1fr))',
+      },
     },
   },
   variants: {

@@ -14,10 +14,11 @@
           bg-white
           rounded-2xl
           p-3
-          shadow-lg
+          shadow-2xl
+          border-b-4 border-primary
         "
       >
-        <slot name="content" />
+        <slot name="content" :dropdownToggler="dropdownToggler" />
       </div>
     </transition>
   </div>
