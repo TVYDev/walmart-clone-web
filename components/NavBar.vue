@@ -8,7 +8,7 @@
           src="~/assets/images/walmart-icon.svg"
         />
         <img
-          class="w-28 hidden md:inline-block"
+          class="w-28 ml-3 hidden md:inline-block navbar__brand-con-full"
           src="~/assets/images/walmart.svg"
         />
       </NuxtLink>
@@ -34,5 +34,8 @@
 /* TODO: Refactor (Find solution to set min-width with Tailwind) */
 .navbar__brand-icon {
   min-width: 1.75rem;
+}
+.navbar__brand-con-full {
+  min-width: 7rem;
 }
 </style>
