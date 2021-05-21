@@ -30,6 +30,10 @@
         @click="closeSideBar"
       />
     </div>
+    <section class="px-6 py-6">
+      <h2 class="font-bold mb-4">Walmart.com</h2>
+      <CommonMenuList :menu="menu" />
+    </section>
   </aside>
 </template>
 
@@ -38,6 +42,69 @@ import Vue from 'vue';
 import { mapGetters, mapMutations } from 'vuex';
 
 export default Vue.extend({
+  data() {
+    return {
+      menu: [
+        {
+          text: 'Track Orders',
+          to: '#',
+          iconClass: 'fas fa-box',
+        },
+        {
+          text: 'Buy Again',
+          to: '#',
+          iconClass: 'fas fa-shopping-bag',
+        },
+        {
+          text: 'Lists',
+          to: '#',
+          iconClass: 'fas fa-list-alt',
+        },
+        {
+          text: 'Walmart+',
+          to: '#',
+          iconClass: 'fab fa-google-wallet',
+        },
+        {
+          text: 'Walmart Credit Card',
+          to: '#',
+          iconClass: 'fas fa-credit-card',
+        },
+        {
+          text: 'Your Location:',
+          to: '#',
+          iconClass: 'fas fa-map-marker',
+          subMenus: [],
+        },
+        {
+          text: 'Local Store',
+          iconClass: 'fas fa-store',
+          subMenus: [
+            {
+              text: 'Local Store',
+              to: '#',
+              iconClass: 'fas fa-store',
+            },
+            {
+              text: 'Store Finder',
+              to: '#',
+              iconClass: 'fas fa-street-view',
+            },
+            {
+              text: 'Weekly Ad',
+              to: '#',
+              iconClass: 'fas fa-ad',
+            },
+            {
+              text: 'Pickup Today',
+              to: '#',
+              iconClass: 'fas fa-box-open',
+            },
+          ],
+        },
+      ],
+    };
+  },
   computed: {
     ...mapGetters({
       sideBar: 'ui/sideBar',
