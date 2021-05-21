@@ -12,7 +12,6 @@ jobs:
       - uses: actions/setup-node@main
         with:
           node-version: 14
-      - run: yarn ci
-      - run: yarn lint
-      - run: yarn build
-      - run: yarn test
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
