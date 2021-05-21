@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         primary: '#041e42',
         secondary: '#0071dc',
+        tertiary: '#03152e',
         accent: '#ffc220',
       },
       gridTemplateRows: {
