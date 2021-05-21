@@ -13,8 +13,12 @@
       "
     >
       <NuxtLink :to="item.to || ''" class="flex flex-row items-center">
-        <i :class="[item.iconClass]" class="w-6 mr-3 text-center" />
-        <span :class="{ 'hover:underline': item.to }">{{ item.text }}</span>
+        <i
+          v-if="item.iconClass"
+          :class="[item.iconClass]"
+          class="w-6 mr-3 text-center"
+        />
+        <span class="hover:underline">{{ item.text }}</span>
       </NuxtLink>
       <i
         v-if="item.subMenus && item.subMenus.length"
