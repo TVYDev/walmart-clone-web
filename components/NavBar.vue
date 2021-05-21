@@ -1,7 +1,7 @@
 <template>
   <nav class="flex flex-row items-center justify-between py-3 px-5 bg-primary">
     <div class="flex flex-row items-center">
-      <i class="fas fa-bars text-white cursor-pointer" />
+      <i class="fas fa-bars text-white cursor-pointer" @click="openSideBar" />
       <NuxtLink to="#" class="mx-3">
         <img
           class="w-7 md:hidden navbar__brand-icon"
@@ -29,3 +29,16 @@
     </div>
   </nav>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+import { mapMutations } from 'vuex';
+
+export default Vue.extend({
+  methods: {
+    ...mapMutations({
+      openSideBar: 'ui/openSideBar',
+    }),
+  },
+});
+</script>

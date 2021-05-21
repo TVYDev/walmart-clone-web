@@ -1,7 +1,8 @@
 <template>
   <div>
+    <CommonTabs :tabs="navTabs" class="bg-primary text-white" />
+    <SideBar />
     <header>
-      <CommonTabs :tabs="navTabs" class="bg-primary text-white" />
       <NavBar />
     </header>
     <main>
@@ -12,6 +13,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+
 export default Vue.extend({
   data() {
     return {
