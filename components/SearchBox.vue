@@ -1,6 +1,6 @@
 <template>
   <CommonDropdownCard>
-    <template #default="{ dropdownToggler }">
+    <template #default="{ dropdownToggler, isShown }">
       <div class="flex flex-row items-center rounded-full overflow-hidden">
         <button
           class="hidden lg:block bg-white text-black px-5 py-1"
@@ -10,7 +10,17 @@
             <span v-if="selectedCategory.value" class="mr-2">
               {{ selectedCategory.text }}
             </span>
-            <i class="fas fa-caret-down text-xs" />
+            <i
+              class="
+                fas
+                fa-caret-down
+                text-xs
+                transform
+                transition
+                duration-200
+              "
+              :class="{ '-rotate-180': isShown }"
+            />
           </span>
         </button>
         <!-- TODO: Find solution to set button with utility class when input is focused -->

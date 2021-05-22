@@ -5,7 +5,7 @@
       <div
         class="w-full bg-primary transition-all duration-300"
         :class="[sideBar ? 'bg-tertiary' : 'bg-primary']"
-        @click.stop="closeSideBar"
+        @click="closeSideBar"
       >
         <CommonTabs :tabs="navTabs" class="bg-primary text-white" />
       </div>

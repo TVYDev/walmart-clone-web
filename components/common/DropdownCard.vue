@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <slot :dropdownToggler="dropdownToggler" />
+    <slot :dropdownToggler="dropdownToggler" :isShown="isShown" />
     <transition name="slide-vertical">
       <div
         v-if="isShown"
