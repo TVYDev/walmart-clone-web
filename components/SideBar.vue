@@ -17,7 +17,7 @@
     }"
   >
     <div
-      class="flex flex-row justify-between items-center px-5 h-12 bg-primary"
+      class="flex flex-row justify-between items-center px-5 h-14 bg-primary"
     >
       <NuxtLink to="#">
         <img
@@ -30,7 +30,7 @@
         @click="closeSideBar"
       />
     </div>
-    <section class="px-6 py-6 overflow-y-auto h-(screen-22) overscroll-contain">
+    <section class="px-6 py-6 overflow-y-auto h-(screen-24) overscroll-contain">
       <h2 class="font-bold mb-4">Walmart.com</h2>
       <CommonMenuList :menu="menu" />
       <hr class="my-5" />

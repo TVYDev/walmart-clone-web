@@ -1,7 +1,12 @@
 <template>
   <div>
     <header class="sticky top-0">
-      <div class="w-full bg-primary transition-all duration-300 bg-primary">
+      <!-- TODO: Find another better solution instead of changing background of below div when side-bar is opened -->
+      <div
+        class="w-full bg-primary transition-all duration-300"
+        :class="[sideBar ? 'bg-tertiary' : 'bg-primary']"
+        @click.stop="closeSideBar"
+      >
         <CommonTabs :tabs="navTabs" class="bg-primary text-white" />
       </div>
       <NavBar />

@@ -16,7 +16,7 @@ module.exports = {
         9: 'repeat(9, minmax(0, 1fr))',
       },
       height: {
-        '(screen-22)': 'calc(100vh - 5.5rem)',
+        '(screen-24)': 'calc(100vh - 6rem)',
       },
     },
   },

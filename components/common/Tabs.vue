@@ -1,13 +1,15 @@
 <template>
-  <ul class="flex flex-row sm:w-80">
+  <ul class="flex flex-row sm:w-80 h-10">
     <li
       v-for="tab in tabs"
       :key="tab.text"
       class="
+        flex
+        items-center
+        justify-center
         cursor-pointer
         w-1/2
         sm:w-40
-        py-2.5
         px-3
         text-xs
         font-semibold
