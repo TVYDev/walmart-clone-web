@@ -2,7 +2,7 @@
   <transition name="fade">
     <div
       v-if="isShown"
-      class="absolute h-full w-full bg-black z-10 opacity-30"
+      class="fixed inset-0 h-full w-full bg-black z-10 opacity-30"
       @click="clickHandler"
     />
   </transition>

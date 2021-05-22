@@ -8,6 +8,7 @@
     </header>
     <SideBar />
     <main>
+      <CommonOverlay :is-shown="sideBar" :click-handler="closeSideBar" />
       <Nuxt />
     </main>
   </div>
@@ -36,6 +37,16 @@ export default Vue.extend({
     ...mapGetters({
       sideBar: 'ui/sideBar',
     }),
+  },
+  watch: {
+    sideBar(newValue) {
+      const el = document.body;
+      if (newValue) {
+        el.classList.add('overflow-hidden');
+      } else {
+        el.classList.remove('overflow-hidden');
+      }
+    },
   },
   methods: {
     ...mapMutations({
