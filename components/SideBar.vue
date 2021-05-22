@@ -1,15 +1,15 @@
 <template>
   <aside
     class="
-      absolute
+      fixed
       w-80
+      top-10
       transform
       transition-all
       duration-300
       bg-white
       shadow-lg
       z-20
-      h-screen
     "
     :class="{
       'translate-x-0': sideBar,
@@ -17,7 +17,7 @@
     }"
   >
     <div
-      class="flex flex-row justify-between items-center px-5 py-2.5 bg-primary"
+      class="flex flex-row justify-between items-center px-5 h-12 bg-primary"
     >
       <NuxtLink to="#">
         <img
@@ -30,7 +30,7 @@
         @click="closeSideBar"
       />
     </div>
-    <section class="px-6 py-6 overflow-y-auto h-screen">
+    <section class="px-6 py-6 overflow-y-auto h-(screen-22) overscroll-contain">
       <h2 class="font-bold mb-4">Walmart.com</h2>
       <CommonMenuList :menu="menu" />
       <hr class="my-5" />
@@ -40,7 +40,7 @@
       </div>
       <CommonMenuList :menu="departmentMenus" />
       <hr class="my-5" />
-      <CommonMenuList :menu="additionalMenus" />
+      <CommonMenuList :menu="additionalMenus" class="mb-7" />
     </section>
   </aside>
 </template>

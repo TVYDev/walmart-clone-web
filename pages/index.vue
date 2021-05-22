@@ -1,5 +1,13 @@
 <template>
-  <Logo />
+  <div>
+    <Logo />
+    <Logo />
+    <Logo />
+    <Logo />
+    <Logo />
+    <Logo />
+    <Logo />
+  </div>
 </template>
 
 <script>

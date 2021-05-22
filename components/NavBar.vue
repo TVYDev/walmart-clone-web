@@ -1,5 +1,7 @@
 <template>
-  <nav class="flex flex-row items-center justify-between py-3 px-5 bg-primary">
+  <nav
+    class="flex flex-row items-center justify-between py-3.5 px-5 bg-primary"
+  >
     <div class="flex flex-row items-center">
       <i
         class="fas fa-bars text-white cursor-pointer hover:text-accent"

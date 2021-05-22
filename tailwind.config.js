@@ -15,6 +15,9 @@ module.exports = {
       gridTemplateRows: {
         9: 'repeat(9, minmax(0, 1fr))',
       },
+      height: {
+        '(screen-22)': 'calc(100vh - 5.5rem)',
+      },
     },
   },
   variants: {
