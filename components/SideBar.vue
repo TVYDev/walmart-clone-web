@@ -9,7 +9,7 @@
       duration-300
       bg-white
       shadow-lg
-      z-20
+      z-40
     "
     :class="{
       'translate-x-0': sideBar,

@@ -15,6 +15,7 @@
         px-6
         py-1
         rounded-full
+        z-0
       "
     >
       <i class="mx-1 align-middle relative -top-0.5 text-xs fas fa-play" />

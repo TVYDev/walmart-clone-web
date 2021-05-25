@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-20">
       <!-- TODO: Find another better solution instead of changing background of below div when side-bar is opened -->
       <div
         class="w-full bg-primary transition-all duration-300"
