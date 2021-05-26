@@ -25,6 +25,9 @@ module.exports = {
         '3xs': '0.5rem',
         '2xs': '0.625rem',
       },
+      flex: {
+        100: '0 0 100%',
+      },
     },
   },
   variants: {

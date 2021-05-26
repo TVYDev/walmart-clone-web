@@ -1,10 +1,23 @@
 <template>
   <section class="h-104 text-center">
-    <img
-      :src="selectedItem ? selectedItem.image : null"
-      alt=""
-      class="object-cover h-full mx-auto"
-    />
+    <div
+      class="
+        flex
+        overflow-x-scroll
+        h-full
+        scroll-snap-x-mandatory
+        scrollbar-none
+      "
+    >
+      <div
+        v-for="i in 10"
+        :id="'#' + i"
+        :key="i"
+        class="border-2 border-red-400 flex-100 scroll-snap-align-start"
+      >
+        <h1>{{ i }}</h1>
+      </div>
+    </div>
     <span
       class="
         relative

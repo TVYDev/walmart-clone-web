@@ -11,3 +11,31 @@
     @apply text-lg;
   }
 }
+
+@layer utilities {
+  .scroll-snap-none {
+    scroll-snap-type: none;
+  }
+  .scroll-snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+  }
+  .scroll-snap-y-mandatory {
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-snap-align-start {
+    scroll-snap-align: start;
+  }
+
+  .scroll-snap-align-end {
+    scroll-snap-align: end;
+  }
+
+  .scroll-snap-align-center {
+    scroll-snap-align: center;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+}
