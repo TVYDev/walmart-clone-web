@@ -19,7 +19,8 @@
         </div>
       </div>
     </CommonBanner>
-    <Hero :items="heros" />
+    <!-- <Hero :items="heros" /> -->
+    <CommonCarousel />
     <Logo />
     <Logo />
     <Logo />
